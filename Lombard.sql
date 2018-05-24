@@ -11,9 +11,26 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Дамп структуры базы данных lombard
+CREATE DATABASE IF NOT EXISTS `lombard` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+USE `lombard`;
+
+-- Дамп структуры для таблица lombard.base_sheet
+CREATE TABLE IF NOT EXISTS `base_sheet` (
+  `ID` int(3) NOT NULL AUTO_INCREMENT,
+  `Name` char(40) COLLATE utf8_unicode_ci NOT NULL,
+  `Product` char(40) COLLATE utf8_unicode_ci NOT NULL,
+  `Value` int(11) NOT NULL,
+  `Collateral amount` int(11) NOT NULL,
+  `Date of delivery` date NOT NULL,
+  `Shelf life` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 -- Дамп данных таблицы lombard.base_sheet: ~9 rows (приблизительно)
 /*!40000 ALTER TABLE `base_sheet` DISABLE KEYS */;
-INSERT IGNORE INTO `base_sheet` (`ID`, `Name`, `Product`, `Value`, `Collateral amount`, `Date of delivery`, `Shelf life`) VALUES
+INSERT INTO `base_sheet` (`ID`, `Name`, `Product`, `Value`, `Collateral amount`, `Date of delivery`, `Shelf life`) VALUES
 	(1, 'Янаева Диана Карповна', 'Кольцо', 5000, 500, '2011-11-11', '2012-11-11'),
 	(2, 'Абрамович Кир Макарович', 'Велосипед', 15000, 4000, '2013-07-21', '2015-05-21'),
 	(3, 'Иванов Иван Иванович', 'Золотые наручные часы', 10000, 2000, '2015-05-27', '2016-07-14'),
