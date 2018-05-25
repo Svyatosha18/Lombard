@@ -18,6 +18,7 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
+    Button6: TButton;
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
@@ -36,6 +37,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
 
   public
@@ -117,6 +119,11 @@ begin
   except
    ShowMessage('SQL-запрос: ОШИБКА!');
   end;
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  SQLQuery1.ApplyUpdates;
 end;
 
 

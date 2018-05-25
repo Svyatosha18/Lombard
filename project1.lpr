@@ -13,7 +13,7 @@ uses
 {$R *.res}
 
 begin
-  Application.Title:='Lombard';
+  Application.Title:='Lombard-1.0';
   RequireDerivedFormResource:=True;
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);

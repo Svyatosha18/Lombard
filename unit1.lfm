@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 809
-  Height = 480
-  Top = 276
-  Width = 640
+  Left = 904
+  Height = 701
+  Top = 134
+  Width = 1014
   Caption = 'Ломбард'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 701
+  ClientWidth = 1014
   Constraints.MinHeight = 480
   Constraints.MinWidth = 640
   DesignTimePPI = 120
@@ -2649,7 +2649,7 @@ object Form1: TForm1
   object DBNavigator1: TDBNavigator
     Left = 48
     Height = 32
-    Top = 429
+    Top = 650
     Width = 301
     Anchors = [akLeft, akBottom]
     BevelOuter = bvNone
@@ -2667,22 +2667,22 @@ object Form1: TForm1
   end
   object Table: TPageControl
     Left = 40
-    Height = 312
+    Height = 533
     Top = 69
-    Width = 560
+    Width = 934
     ActivePage = TabSheet1
     Anchors = [akTop, akLeft, akRight, akBottom]
     TabIndex = 0
     TabOrder = 5
     object TabSheet1: TTabSheet
       Caption = 'Table'
-      ClientHeight = 279
-      ClientWidth = 552
+      ClientHeight = 500
+      ClientWidth = 926
       object DBGrid1: TDBGrid
         Left = -4
-        Height = 285
+        Height = 506
         Top = -2
-        Width = 560
+        Width = 934
         Anchors = [akTop, akLeft, akRight, akBottom]
         Color = clWindow
         Columns = <>
@@ -2740,6 +2740,16 @@ object Form1: TForm1
         ParentColor = False
       end
     end
+  end
+  object Button6: TButton
+    Left = 91
+    Height = 34
+    Top = 613
+    Width = 94
+    Anchors = [akBottom]
+    Caption = 'Save DB'
+    OnClick = Button6Click
+    TabOrder = 6
   end
   object MySQL57Connection1: TMySQL57Connection
     Connected = False
